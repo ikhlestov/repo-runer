@@ -64,7 +64,7 @@ def run_container(docker_client: DockerClient, docker_port: int, host_port: int)
         container = docker_client.containers.run(
             DOCKER_IMAGE_TAG, auto_remove=True, detach=True,
             name=DOCKER_CONTAINER_TAG, ports={f'{docker_port}/tcp': host_port})
-        LOGGER.info(f"Docker container is running. Check it on 'http://127.0.0.1:{host_port}")
+        LOGGER.info(f"Docker container is running. Check it on 'http://127.0.0.1:{host_port}'")
         return container
     except Exception as e:
         __log_and_exit(f"Failed to start docker container. Error: {repr(e)}")

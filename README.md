@@ -8,7 +8,7 @@ To use this script you should have installed in advance:
 - Git
 - Python >= 3.6
 
-To install project execute `TODO`. Note: as you know it's better to install everything inside virtualenv.
+To install project execute `pip install git+https://github.com/ikhlestov/repo-runer.git`. Note: as you know it's better to install everything inside virtualenv.
 
 ## Usage
 
@@ -17,6 +17,6 @@ To install project execute `TODO`. Note: as you know it's better to install ever
 
 ## TODO
 
-[ ] Check how everything works without Git, Docker or Python
-[ ] Check that docker container is running and respond to requests
-[ ] Provide tests
+- [ ] Check how everything works without Git, Docker or Python
+- [ ] Check that docker container is running and respond to requests
+- [ ] Provide tests
